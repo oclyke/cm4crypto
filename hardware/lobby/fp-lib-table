@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "cm4crypto")(type "KiCad")(uri "${KIPRJMOD}/../libs/cm4crypto/cm4crypto.pretty")(options "")(descr ""))
+)
