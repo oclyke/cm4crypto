@@ -2093,7 +2093,7 @@
     (property "Value" "MYLSM00502ERPL" (id 1) (at -2.54 10.16 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "cm4crypto:MYLSM00502ERPL" (id 2) (at 0 -6.35 0)
+    (property "Footprint" "CM4IO:MYLSM00502ERPL" (id 2) (at 0 -6.35 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (id 3) (at -6.35 -2.54 0)

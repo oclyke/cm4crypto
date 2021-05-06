@@ -343,7 +343,7 @@
       "global_label_dangling": "error",
       "hier_label_mismatch": "error",
       "label_dangling": "error",
-      "lib_symbol_issues": "warning",
+      "lib_symbol_issues": "ignore",
       "multiple_net_names": "error",
       "net_not_bus_member": "error",
       "no_connect_connected": "error",
@@ -351,7 +351,7 @@
       "pin_not_connected": "error",
       "pin_not_driven": "error",
       "pin_to_pin": "warning",
-      "power_pin_not_driven": "error",
+      "power_pin_not_driven": "ignore",
       "similar_labels": "error",
       "unannotated": "error",
       "unit_value_mismatch": "error",
@@ -636,7 +636,7 @@
   },
   "sheets": [
     [
-      "6e52e18e-9d35-42e9-a4cc-aa0d508d90b7",
+      "b1cf8d86-4ddf-406f-987d-93aac5269930",
       ""
     ],
     [

@@ -1,4 +1,4 @@
-19425982951844866
+19432463803445273
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -84182,12 +84182,33 @@ Power Jack
 3
 3
 cm4crypto
+DF40C-100DP-0.4V(51)
+
+
+0
+100
+100
+cm4crypto
+DF40C-100DS-0.4V(51)
+
+
+0
+100
+100
+cm4crypto
 EDAC 690-019-298-412
 
 
 0
 23
 23
+cm4crypto
+EVQ-P7C01P
+
+
+0
+4
+4
 cm4crypto
 HD-RA-DSF12-TR
 
@@ -84287,9 +84308,16 @@ USB USB_B USB_micro USB_OTG
 17
 6
 cm4crypto
+cus-12b
+
+
+0
+7
+4
+cm4crypto
 rpi-40-just-power
 Through hole straight pin header, 2x20, 2.54mm pitch, double rows
 Through hole pin header THT 2x20 2.54mm double row
 0
-5
-5
+7
+7
