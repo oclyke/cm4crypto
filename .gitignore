@@ -1,0 +1,6 @@
+# backups
+hardware/mezzanine/mezzanine-backups/*
+hardware/lobby/lobby-backups/*
+
+# osx
+**/.DS_Store

@@ -48,7 +48,13 @@
           "min_clearance": 0.508
         }
       },
-      "diff_pair_dimensions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
       "drc_exclusions": [],
       "meta": {
         "version": 2
@@ -95,22 +101,36 @@
         "allow_blind_buried_vias": false,
         "allow_microvias": false,
         "max_error": 0.005,
-        "min_clearance": 0.0,
-        "min_copper_edge_clearance": 0.0,
-        "min_hole_clearance": 0.0,
+        "min_clearance": 0.09,
+        "min_copper_edge_clearance": 0.19999999999999998,
+        "min_hole_clearance": 0.32999999999999996,
         "min_hole_to_hole": 0.25,
         "min_microvia_diameter": 0.19999999999999998,
         "min_microvia_drill": 0.09999999999999999,
         "min_silk_clearance": 0.0,
-        "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.19999999999999998,
-        "min_via_annular_width": 0.049999999999999996,
-        "min_via_diameter": 0.39999999999999997,
+        "min_through_hole_diameter": 0.19999999999999998,
+        "min_track_width": 0.09,
+        "min_via_annular_width": 0.13,
+        "min_via_diameter": 0.3,
         "solder_mask_clearance": 0.0,
         "solder_mask_min_width": 0.0
       },
-      "track_widths": [],
-      "via_dimensions": [],
+      "track_widths": [
+        0.0,
+        0.2,
+        0.4,
+        0.6
+      ],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        },
+        {
+          "diameter": 0.8,
+          "drill": 0.4
+        }
+      ],
       "zones_allow_external_fillets": false,
       "zones_use_no_outline": true
     },
@@ -121,9 +141,7 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [
-      "multiple_net_names|1346200|825500|34f08c78-45e6-4e80-886b-5250563fb59a|5286b50d-3f6d-4bec-a66b-d68e2e11b7a6"
-    ],
+    "erc_exclusions": [],
     "meta": {
       "version": 0
     },
@@ -338,8 +356,8 @@
     "classes": [
       {
         "bus_width": 6.0,
-        "clearance": 0.2,
-        "diff_pair_gap": 0.25,
+        "clearance": 0.09,
+        "diff_pair_gap": 0.09,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
         "line_style": 0,
@@ -348,7 +366,92 @@
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.25,
+        "track_width": 0.2,
+        "via_diameter": 0.8,
+        "via_drill": 0.4,
+        "wire_width": 6.0
+      },
+      {
+        "bus_width": 6.0,
+        "clearance": 0.09,
+        "diff_pair_gap": 0.09,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.254,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "ETH data diff",
+        "nets": [
+          "/TRD0_N",
+          "/TRD0_P",
+          "/TRD1_N",
+          "/TRD1_P",
+          "/TRD2_N",
+          "/TRD2_P",
+          "/TRD3_N",
+          "/TRD3_P"
+        ],
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.254,
+        "via_diameter": 0.8,
+        "via_drill": 0.4,
+        "wire_width": 6.0
+      },
+      {
+        "bus_width": 6.0,
+        "clearance": 0.09,
+        "diff_pair_gap": 0.09,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.254,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "HDMI data diff",
+        "nets": [
+          "/HDMI0_CLK_N",
+          "/HDMI0_CLK_P",
+          "/HDMI0_TX0_N",
+          "/HDMI0_TX0_P",
+          "/HDMI0_TX1_N",
+          "/HDMI0_TX1_P",
+          "/HDMI0_TX2_N",
+          "/HDMI0_TX2_P",
+          "/HDMI1_CLK_N",
+          "/HDMI1_CLK_P",
+          "/HDMI1_TX0_N",
+          "/HDMI1_TX0_P",
+          "/HDMI1_TX1_N",
+          "/HDMI1_TX1_P",
+          "/HDMI1_TX2_N",
+          "/HDMI1_TX2_P"
+        ],
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.254,
+        "via_diameter": 0.8,
+        "via_drill": 0.4,
+        "wire_width": 6.0
+      },
+      {
+        "bus_width": 6.0,
+        "clearance": 0.09,
+        "diff_pair_gap": 0.09,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.35,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "USB data diff",
+        "nets": [
+          "/USB2_DEV_N",
+          "/USB2_DEV_P",
+          "/USB2_HOST_N",
+          "/USB2_HOST_P"
+        ],
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.35,
         "via_diameter": 0.8,
         "via_drill": 0.4,
         "wire_width": 6.0
