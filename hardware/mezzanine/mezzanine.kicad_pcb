@@ -1983,7 +1983,7 @@
 
   (footprint "cm4crypto:DF40C-100DP-0.4V(51)" (layer "B.Cu")
     (tedit 6090E594) (tstamp 890c44f1-75a8-4b4e-a6ed-d939c6a5a073)
-    (at 22.1 47.5 180)
+    (at 22.1 40.5 180)
     (property "Field4" "Hirose")
     (property "Field5" "2x DF40C-100DS-0.4V")
     (property "Sheetfile" "mezzanine.kicad_sch")
