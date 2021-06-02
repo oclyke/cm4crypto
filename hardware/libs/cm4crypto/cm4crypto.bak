@@ -4051,7 +4051,7 @@
     (property "Value" "USB_C" (id 1) (at 8.89 29.21 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "CM4IO:USB4105-GF-A" (id 2) (at 1.27 20.32 0)
+    (property "Footprint" "cm4crypto:USB4105-GF-A" (id 2) (at 1.27 20.32 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 1.27 20.32 0)
