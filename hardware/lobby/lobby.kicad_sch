@@ -4062,7 +4062,7 @@
     (uuid ae2ff523-15be-4cb4-ab50-2c31b9f52a22)
     (property "Reference" "Module1" (id 0) (at 193.04 12.7 0))
     (property "Value" "ComputeModule4-CM4" (id 1) (at 193.04 15.24 0))
-    (property "Footprint" "cm4crypto:Raspberry-Pi-4-Compute-Module" (id 2) (at 195.58 111.76 0)
+    (property "Footprint" "cm4crypto:Raspberry-Pi-4-Compute-Module-diagonal-mount-bl-ur" (id 2) (at 195.58 111.76 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (id 3) (at 195.58 111.76 0)
@@ -4177,7 +4177,7 @@
     (uuid 9f8c7c9e-f209-4a15-a904-9871f0b04ae7)
     (property "Reference" "Module1" (id 0) (at 76.2 15.24 0))
     (property "Value" "ComputeModule4-CM4" (id 1) (at 76.2 17.78 0))
-    (property "Footprint" "cm4crypto:Raspberry-Pi-4-Compute-Module" (id 2) (at 220.98 109.22 0)
+    (property "Footprint" "cm4crypto:Raspberry-Pi-4-Compute-Module-diagonal-mount-bl-ur" (id 2) (at 220.98 109.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (id 3) (at 220.98 109.22 0)
@@ -4934,10 +4934,10 @@
       (reference "J2") (unit 1) (value "THD-20-R") (footprint "cm4crypto:rpi-40-just-power")
     )
     (path "/9f8c7c9e-f209-4a15-a904-9871f0b04ae7"
-      (reference "Module1") (unit 1) (value "ComputeModule4-CM4") (footprint "cm4crypto:Raspberry-Pi-4-Compute-Module")
+      (reference "Module1") (unit 1) (value "ComputeModule4-CM4") (footprint "cm4crypto:Raspberry-Pi-4-Compute-Module-diagonal-mount-bl-ur")
     )
     (path "/ae2ff523-15be-4cb4-ab50-2c31b9f52a22"
-      (reference "Module1") (unit 2) (value "ComputeModule4-CM4") (footprint "cm4crypto:Raspberry-Pi-4-Compute-Module")
+      (reference "Module1") (unit 2) (value "ComputeModule4-CM4") (footprint "cm4crypto:Raspberry-Pi-4-Compute-Module-diagonal-mount-bl-ur")
     )
     (path "/c1ce5a38-066f-4e37-8f93-41dc0889376a"
       (reference "R1") (unit 1) (value "2.2K") (footprint "Resistor_SMD:R_0603_1608Metric")
