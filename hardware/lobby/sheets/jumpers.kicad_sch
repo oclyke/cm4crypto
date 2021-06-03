@@ -396,7 +396,7 @@
   )
   (wire (pts (xy 45.72 156.21) (xy 46.99 156.21))
     (stroke (width 0) (type solid) (color 0 0 0 0))
-    (uuid 434e5b58-44e9-46b5-823d-e9df6df600bf)
+    (uuid e6f40709-c84b-47e6-afda-fbd3c482c12a)
   )
   (wire (pts (xy 46.99 30.48) (xy 46.99 34.29))
     (stroke (width 0) (type solid) (color 0 0 0 0))
@@ -467,7 +467,7 @@
   )
   (label "+1.8v" (at 46.99 156.21 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 196f8394-22b8-4661-bb53-d25924962eed)
+    (uuid 7432e464-c6a4-42fa-8040-ab26daf811ed)
   )
 
   (hierarchical_label "nRPIBOOT" (shape output) (at 22.86 30.48 180)
