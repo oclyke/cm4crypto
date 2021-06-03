@@ -273,7 +273,7 @@
     (property "Sheetname" "hdmi")
     (path "/26400dd5-921d-4eec-98dd-2821857a6ca0/31dcb7aa-a3e8-4a0f-b525-f10238054e10")
     (attr smd)
-    (fp_text reference "U6" (at 0 -2.4) (layer "F.SilkS")
+    (fp_text reference "U6" (at 0 -2.4) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 882d1929-99de-4c65-ae1e-89a8c89f47b1)
     )
