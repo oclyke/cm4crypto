@@ -64,7 +64,8 @@
         "hole_clearance|21075000|33000000|d4defedf-b1af-479f-b2ff-04d6627254be|f680f6b1-4ebd-451b-bde2-e1aba4e88a7e",
         "hole_clearance|21075000|33385000|0804d596-5eeb-4a94-8c55-af2c1dad3de9|f680f6b1-4ebd-451b-bde2-e1aba4e88a7e",
         "items_not_allowed|76750000|62000000|07680a90-897e-4783-8dbd-b38faf8e37c2|00000000-0000-0000-0000-000000000000",
-        "silk_overlap|25250000|54340000|95dd483c-8e7e-4656-89ae-0b46cebe817f|a9bcc663-aec7-4c44-b981-cf6044de430c"
+        "silk_overlap|25250000|54340000|95dd483c-8e7e-4656-89ae-0b46cebe817f|a9bcc663-aec7-4c44-b981-cf6044de430c",
+        "silk_overlap|55250000|37500000|bdcbdf02-8f5e-4955-8d17-9fee67042df9|7ad3ad01-8b9d-439a-863b-aa1aac2420e8"
       ],
       "meta": {
         "version": 2

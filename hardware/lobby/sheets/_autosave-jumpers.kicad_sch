@@ -636,7 +636,7 @@
   (symbol (lib_id "Switch:SW_SPST") (at 40.64 30.48 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid a4644bf7-27ec-40c2-9e3c-f742ff57c6dc)
-    (property "Reference" "SW?" (id 0) (at 40.64 25.4 0))
+    (property "Reference" "SW1" (id 0) (at 40.64 25.4 0))
     (property "Value" "SW_SPST" (id 1) (at 40.64 27.94 0))
     (property "Footprint" "cm4crypto:cus-12b" (id 2) (at 40.64 30.48 0)
       (effects (font (size 1.27 1.27)) hide)
