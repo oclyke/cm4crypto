@@ -5120,7 +5120,7 @@
       (reference "#PWR067") (unit 1) (value "GND") (footprint "")
     )
     (path "/f609ecfd-c54b-4bb9-91bc-5405b634349d/30f3ed95-034c-40c9-9d38-33fc4480bfcc"
-      (reference "C6") (unit 1) (value "47 uF / 6.3V") (footprint "Capacitor_SMD:C_0805_2012Metric")
+      (reference "C6") (unit 1) (value "47 uF / 6.3V") (footprint "Capacitor_Tantalum_SMD:CP_EIA-2012-15_AVX-P")
     )
     (path "/f609ecfd-c54b-4bb9-91bc-5405b634349d/c496f1a7-cc7d-4198-a74c-0999500b0975"
       (reference "C7") (unit 1) (value "10 uF / 25V") (footprint "Capacitor_SMD:C_0603_1608Metric")

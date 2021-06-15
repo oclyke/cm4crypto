@@ -445,7 +445,7 @@
     (property "Value" "47 uF / 6.3V" (id 1) (at 168.91 85.7249 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (id 2) (at 166.0652 87.63 0)
+    (property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-2012-15_AVX-P" (id 2) (at 166.0652 87.63 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 165.1 83.82 0)
