@@ -5086,11 +5086,11 @@
     (path "/77de068a-02f8-4ae6-b8c0-781dd2b73f91/a6b460a0-5dfb-4adc-a163-5d7a1959d213"
       (reference "R8") (unit 1) (value "2.2k") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
+    (path "/77de068a-02f8-4ae6-b8c0-781dd2b73f91/a4644bf7-27ec-40c2-9e3c-f742ff57c6dc"
+      (reference "SW1") (unit 1) (value "SW_SPST") (footprint "cm4crypto:cus-12b")
+    )
     (path "/77de068a-02f8-4ae6-b8c0-781dd2b73f91/f2744f4a-d83b-4d49-85b4-10177e31935d"
       (reference "SW2") (unit 1) (value "SW_SPST") (footprint "cm4crypto:cus-12b")
-    )
-    (path "/77de068a-02f8-4ae6-b8c0-781dd2b73f91/a4644bf7-27ec-40c2-9e3c-f742ff57c6dc"
-      (reference "SW?") (unit 1) (value "SW_SPST") (footprint "cm4crypto:cus-12b")
     )
     (path "/e54a098a-3e75-42f4-98f1-a7954ef5fe4e/ea291e70-9125-4b55-a46e-d9ff67ca9b2a"
       (reference "#PWR062") (unit 1) (value "GND") (footprint "")
