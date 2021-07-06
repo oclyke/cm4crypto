@@ -5222,10 +5222,10 @@
       (reference "#PWR097") (unit 1) (value "GND") (footprint "")
     )
     (path "/90eb3fd8-753f-4e29-958b-071e38b585e6/a091becf-8395-4a1c-a566-541506e0898c"
-      (reference "Module2") (unit 1) (value "hirose-100") (footprint "cm4crypto:DF40C-100DP-0.4V(51)")
+      (reference "Module2") (unit 1) (value "hirose-100") (footprint "cm4crypto:DF40C-100DS-0.4V(51)")
     )
     (path "/90eb3fd8-753f-4e29-958b-071e38b585e6/9d921adf-4797-4b48-8b49-b7d9316e4ad3"
-      (reference "Module3") (unit 1) (value "hirose-100") (footprint "cm4crypto:DF40C-100DP-0.4V(51)")
+      (reference "Module3") (unit 1) (value "hirose-100") (footprint "cm4crypto:DF40C-100DS-0.4V(51)")
     )
     (path "/0f5e5f4f-8137-47e3-8d99-f259a96064e1/afc00b69-0696-46e2-98ba-55fedd17a73a"
       (reference "#PWR098") (unit 1) (value "GND") (footprint "")
