@@ -5255,7 +5255,7 @@
       (reference "C11") (unit 1) (value "0.1uF") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
     (path "/c0b8a469-fde4-4dd1-a041-173d7f4feb91/713ffa89-31d9-4f73-b8f5-d1b175293f46"
-      (reference "J4") (unit 1) (value "Conn_01x22_Female") (footprint "Connector_FFC-FPC:Hirose_FH12-22S-0.5SH_1x22-1MP_P0.50mm_Horizontal")
+      (reference "J4") (unit 1) (value "Conn_01x22_Female") (footprint "cm4crypto:SFV22R-2STE1HLF")
     )
   )
 )
