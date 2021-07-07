@@ -1439,7 +1439,7 @@
     (property "Value" "100uF" (id 1) (at 107.6452 57.023 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-7343-31_Kemet-D" (id 2) (at 105.6132 59.69 0)
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" (id 2) (at 105.6132 59.69 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 104.648 55.88 0)

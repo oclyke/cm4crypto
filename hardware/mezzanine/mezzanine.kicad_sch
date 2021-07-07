@@ -2840,7 +2840,7 @@
       (reference "C1") (unit 1) (value "10u") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
     (path "/0f425675-99ed-480d-b747-d9d2b28cd30b/e8c672a2-2c11-4847-8f5e-ab9c4180907d"
-      (reference "C2") (unit 1) (value "100uF") (footprint "Capacitor_Tantalum_SMD:CP_EIA-7343-31_Kemet-D")
+      (reference "C2") (unit 1) (value "100uF") (footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder")
     )
     (path "/0f425675-99ed-480d-b747-d9d2b28cd30b/574212d6-45cc-4314-9cb9-e5de6f5d33b7"
       (reference "C3") (unit 1) (value "10u") (footprint "Capacitor_SMD:C_0603_1608Metric")
