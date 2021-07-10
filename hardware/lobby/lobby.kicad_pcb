@@ -426,11 +426,11 @@
     (property "Sheetfile" "./sheets/escalator.kicad_sch")
     (property "Sheetname" "escalator")
     (path "/90eb3fd8-753f-4e29-958b-071e38b585e6/a091becf-8395-4a1c-a566-541506e0898c")
-    (fp_text reference "Module2" (at 0 7.8 90 unlocked) (layer "F.SilkS")
+    (fp_text reference "Module2" (at 0 7.8 90 unlocked) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp f812ede6-cb8e-41c9-80e2-337c6285e009)
     )
-    (fp_text value "hirose-100" (at 4 0 90 unlocked) (layer "F.Fab")
+    (fp_text value "hirose-100" (at 4 0 90 unlocked) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 76a76bd7-d3d2-47e2-881b-e565b77f61d4)
     )
@@ -2024,11 +2024,11 @@
     (property "Sheetfile" "./sheets/escalator.kicad_sch")
     (property "Sheetname" "escalator")
     (path "/90eb3fd8-753f-4e29-958b-071e38b585e6/9d921adf-4797-4b48-8b49-b7d9316e4ad3")
-    (fp_text reference "Module3" (at 0 7.8 90 unlocked) (layer "F.SilkS")
+    (fp_text reference "Module3" (at 0 7.8 90 unlocked) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp d3aab1a4-37b7-4689-8499-34040a80d4c9)
     )
-    (fp_text value "hirose-100" (at 4 0 90 unlocked) (layer "F.Fab")
+    (fp_text value "hirose-100" (at 4 0 90 unlocked) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp f6d9617f-0455-441a-8aa7-cf2df3e2345b)
     )
@@ -3625,11 +3625,11 @@
     (property "Sheetfile" "./sheets/camera.kicad_sch")
     (property "Sheetname" "camera")
     (path "/c0b8a469-fde4-4dd1-a041-173d7f4feb91/713ffa89-31d9-4f73-b8f5-d1b175293f46")
-    (fp_text reference "J4" (at 0 -0.5 -90 unlocked) (layer "F.SilkS")
+    (fp_text reference "J4" (at 0 -0.5 -90 unlocked) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 38c34cb9-9b33-4cab-9793-24a85661bce1)
     )
-    (fp_text value "Conn_01x22_Female" (at 0 1 -90 unlocked) (layer "F.Fab")
+    (fp_text value "Conn_01x22_Female" (at 0 1 -90 unlocked) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp cfeab5cb-4ee3-4fe9-889d-646edaf3fc9f)
     )
@@ -3757,7 +3757,7 @@
     (property "Sheetname" "")
     (path "/ae2ff523-15be-4cb4-ab50-2c31b9f52a22")
     (attr smd)
-    (fp_text reference "Module1" (at 18.38 -5.08) (layer "F.SilkS")
+    (fp_text reference "Module1" (at 18.38 -5.08) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp c99b5f71-711a-4386-84a6-7b75181aa452)
     )
@@ -4431,7 +4431,7 @@
     (property "Sheetfile" "./sheets/m.2-m.kicad_sch")
     (property "Sheetname" "m.2-m")
     (path "/e54a098a-3e75-42f4-98f1-a7954ef5fe4e/e1b2fe8c-2506-42c0-bb0b-9d65cf9002e1")
-    (fp_text reference "U2" (at 0 0 90) (layer "B.SilkS")
+    (fp_text reference "U2" (at 0 0 90) (layer "B.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
       (tstamp db6b06fa-7a01-4417-80eb-ba838f903d97)
     )
@@ -5336,7 +5336,7 @@
     (property "Sheetname" "power")
     (path "/f609ecfd-c54b-4bb9-91bc-5405b634349d/30f3ed95-034c-40c9-9d38-33fc4480bfcc")
     (attr smd)
-    (fp_text reference "C6" (at 0 1.58 270) (layer "B.SilkS")
+    (fp_text reference "C6" (at 0 1.58 270) (layer "B.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
       (tstamp efe5978d-039a-4aa9-9a58-0c9c3857484a)
     )
@@ -5685,7 +5685,7 @@
     (property "Sheetname" "usb-mux")
     (path "/0f5e5f4f-8137-47e3-8d99-f259a96064e1/e51f2097-a898-46d8-a4c6-99e47eab330f")
     (attr smd)
-    (fp_text reference "U4" (at 0 2.35) (layer "B.SilkS")
+    (fp_text reference "U4" (at 0 2.35) (layer "B.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
       (tstamp 243966ff-8044-409a-aab7-b24ba3247cc0)
     )
