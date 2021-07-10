@@ -5105,7 +5105,7 @@
       (reference "C5") (unit 1) (value "0.1uF") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
     (path "/e54a098a-3e75-42f4-98f1-a7954ef5fe4e/e1b2fe8c-2506-42c0-bb0b-9d65cf9002e1"
-      (reference "U2") (unit 1) (value "M.2-keyM") (footprint "cm4crypto:M.2 - M - MDT420M01002")
+      (reference "U2") (unit 1) (value "M.2-keyM") (footprint "cm4crypto:M.2 - M - Amphenol - 10131758-001RLF")
     )
     (path "/f609ecfd-c54b-4bb9-91bc-5405b634349d/53023634-47ea-48aa-a2ff-6a082e30d280"
       (reference "#PWR064") (unit 1) (value "GND") (footprint "")

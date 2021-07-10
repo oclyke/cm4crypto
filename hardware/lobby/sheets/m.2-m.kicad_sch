@@ -851,7 +851,7 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "M.2-keyM" (id 1) (at 148.59 49.53 0))
-    (property "Footprint" "cm4crypto:M.2 - M - MDT420M01002" (id 2) (at 148.59 151.13 0)
+    (property "Footprint" "cm4crypto:M.2 - M - Amphenol - 10131758-001RLF" (id 2) (at 148.59 151.13 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (id 3) (at 165.1 45.72 0)
