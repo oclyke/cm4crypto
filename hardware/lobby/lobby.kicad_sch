@@ -5240,7 +5240,7 @@
       (reference "C9") (unit 1) (value "0.1uF") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
     (path "/0f5e5f4f-8137-47e3-8d99-f259a96064e1/e51f2097-a898-46d8-a4c6-99e47eab330f"
-      (reference "U4") (unit 1) (value "FSUSB42MX") (footprint "Package_SO:MSOP-10_3x3mm_P0.5mm")
+      (reference "U4") (unit 1) (value "FSUSB42MX") (footprint "Package_DFN_QFN:UQFN-10_1.6x2.1mm_P0.5mm")
     )
     (path "/c0b8a469-fde4-4dd1-a041-173d7f4feb91/b5b0f74e-5936-47c4-af60-058b2d0ae0ac"
       (reference "#PWR0100") (unit 1) (value "GND") (footprint "")

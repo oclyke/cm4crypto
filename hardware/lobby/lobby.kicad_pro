@@ -62,6 +62,8 @@
         "clearance|56000000|36600000|c62b531a-dda9-4076-b2b8-5991c1dbcd28|aa56b93f-0468-4de0-a889-44a505a4d05c",
         "courtyards_overlap|83770001|26520001|4196c2ab-1daa-441e-9f84-5d1b8da48c11|d618b778-c3bc-4c1b-ba32-8164d2885fb5",
         "courtyards_overlap|85270001|26520001|3972c4ad-82a4-4b99-b800-89278ceeca38|4196c2ab-1daa-441e-9f84-5d1b8da48c11",
+        "courtyards_overlap|85270001|26520001|4196c2ab-1daa-441e-9f84-5d1b8da48c11|3972c4ad-82a4-4b99-b800-89278ceeca38",
+        "diff_pair_gap_out_of_range|79928002|40228753|7fff0c91-e934-4c07-b85a-5f6e7b91670a|a0fc6385-19dd-420c-b12d-8363904614e6",
         "hole_clearance|21075000|32815000|9e1e6060-235a-4bf6-9a78-4266d8583e7c|f680f6b1-4ebd-451b-bde2-e1aba4e88a7e",
         "hole_clearance|21075000|33000000|d4defedf-b1af-479f-b2ff-04d6627254be|f680f6b1-4ebd-451b-bde2-e1aba4e88a7e",
         "hole_clearance|21075000|33385000|0804d596-5eeb-4a94-8c55-af2c1dad3de9|f680f6b1-4ebd-451b-bde2-e1aba4e88a7e",
