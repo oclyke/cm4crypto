@@ -2,5 +2,9 @@
 hardware/mezzanine/mezzanine-backups/*
 hardware/lobby/lobby-backups/*
 
+# sphinx / docs
+docs/build
+
+
 # osx
 **/.DS_Store
