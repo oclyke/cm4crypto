@@ -8,6 +8,8 @@ from collections import namedtuple
 import os
 from korad import kel103
 
+CONSECUTIVE_SAMPLE_FAILURE_LIMIT = 5
+
 def main(args):
 
   # load configuration
@@ -105,6 +107,7 @@ def main(args):
       log(bytearray(json.dumps(sample['values']), 'utf-8'), count)
       count += 1
       time.sleep(delay)
+      consecutive_sample_failures = 0
 
     except KeyboardInterrupt:
       print('stopping test')
