@@ -84,6 +84,7 @@ def main(args):
 
   # run the test
   stop_reason = None
+  delay = 1/config.rate # seconds
   count = 0
   consecutive_sample_failures = 0
   kel.setOutput(True)
@@ -103,7 +104,7 @@ def main(args):
 
       log(bytearray(json.dumps(sample['values']), 'utf-8'), count)
       count += 1
-      time.sleep(0.125)
+      time.sleep(delay)
 
     except KeyboardInterrupt:
       print('stopping test')
