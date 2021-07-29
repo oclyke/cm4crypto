@@ -38,6 +38,77 @@ String myString = null;
 Serial myPort;  // The serial port
 
 float[] temps =  {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+String[] lines;
+int index = 0;
+int offset = 0;
+
+float min = 7000.0;
+float max = -7000.0;
+
+String path = "/Users/owenlyke/subluminal/cm4crypto/testing/poe/results/cmctech/cc-3a5/";
+String filename = "heat";
+
+void draw_heatmap(int elapsed_ms, float global_min, float global_max){
+  // Prepare variables needed to draw our heatmap
+  int x = 0;
+  int y = 0;
+  int i = 0;
+  float min = 7000.0;
+  float max = -7000.0;
+  float[] min_loc = {0, 0};
+  float[] max_loc = {0, 0};
+  background(0);   // Clear the screen with a black background
+  colorMode(HSB, 360, 100, 100);
+  
+  // each GridEYE pixel will be represented by a 50px square: 
+  // because 50 x 8 = 400, we draw squares until our y location
+  // is 400
+  while(y < 400){
+  
+    
+    // for each increment in the y direction, draw 8 boxes in the 
+    // x direction, creating a 64 pixel matrix
+    while(x < 400){
+      // before drawing each pixel, set our paintcan color to the 
+      // appropriate mapped color value
+      if(temps[i] < min){
+        min = temps[i];
+        min_loc[0] = x;
+        min_loc[1] = y;
+      }
+      if(temps[i] > max){
+        max = temps[i];
+        max_loc[0] = x;
+        max_loc[1] = y;
+      }
+      
+      //float hue = map(temps[i], 30, 110, 240, 360);
+      //float hue = map(temps[i], min, max, 240, 360);
+      float hue = map(temps[i], global_min, global_max, 240, 360);
+      
+      fill(hue, 100, 100);
+      rect(x,y,50,50);
+      x = x + 50;
+      i++;
+    }
+    
+    y = y + 50;
+    x = 0;
+  }
+  
+  // Add a gaussian blur to the canvas in order to create a rough
+  // visual interpolation between pixels.
+  filter(BLUR,8); 
+  
+    
+  //textSize(32);
+  colorMode(RGB, 255, 255, 255);
+  fill(255, 255, 255);
+  text("elapsed: " + nf(elapsed_ms/1000.0, 0, 3) + " s", 250, 30); 
+  text(nf(min, 0, 2) + " C", min_loc[0] + 25, min_loc[1] + 25); 
+  text(nf(max, 0, 2) + " C", max_loc[0] + 25, max_loc[1] + 25); 
+  
+}
 
 // The statements in the setup() function 
 // execute once when the program begins
@@ -46,20 +117,32 @@ void setup() {
   noStroke();
   frameRate(30);
   
-  // Print a list of connected serial devices in the console
-  printArray(Serial.list());
-  // Depending on where your GridEYE falls on this list, you
-  // may need to change Serial.list()[0] to a different number
-  myPort = new Serial(this, "/dev/cu.usbmodem46953501", 115200);
-  myPort.write(0x01);
-  myPort.clear();
-  // Throw out the first chunk in case we caught it in the 
-  // middle of a frame
-  myString = myPort.readStringUntil('\n');
-  myString = null;
-  // change to HSB color mode, this will make it easier to color
-  // code the temperature data
-  colorMode(HSB, 360, 100, 100);
+  lines = loadStrings(path + filename +  ".json");
+  
+  
+  // find overall min/max temp values
+  for (int i = 0; i < lines.length; i++){
+    JSONObject obj = parseJSONObject(lines[i]);
+    if (obj == null){
+     print("bad json... skipping\n");
+     return;
+    }
+    JSONArray pixelz = obj.getJSONArray("pixels");
+    if(pixelz == null){
+      print("bad pixelz\n");
+      return;
+    }
+    for (int q = 0; q < 64; q++) {
+      float temp = pixelz.getFloat(q); 
+      if (temp < min){
+        min = temp;
+      }
+      if(temp > max){
+        max = temp;
+      }
+    }
+  }
+  
 }
 
 // The statements in draw() are executed until the 
@@ -67,81 +150,42 @@ void setup() {
 // sequence and after the last line is read, the first 
 // line is executed again.
 void draw() { 
-  
-  // When there is a sizeable amount of data on the serial port
-  // read everything up to the first linefeed
-  if(myPort.available() > 64){
-  myString = myPort.readStringUntil(13);
-  
-  print(myString);
-  
-  // generate an array of strings that contains each of the comma
-  // separated values
-  if(myString == null){
-    print("did not get a string!");
-    return; 
-  }
-  
-  JSONObject json = parseJSONObject(myString);
-  if (json == null) {
-    print("json object not parsed");
-    return;
-  }
-  
-  JSONArray arr = json.getJSONArray("pixels");
-  
-  //String splitString[] = splitTokens(myString, ",");
-  
-  //// for each of the 64 values, map the temperatures between 20C and 40C
-  //// to the blue through red portion of the color space
-  
-  //print(splitString.length);
-  
-  //int len = splitString.length;
-  //int todo = min(len, 64);
-  //if(len < 64){
-  //  return;
-  //}
-  
-  int todo = 64;
-  
-  for(int q = 0; q < todo; q++){
-   
-    temps[q] = map(arr.getFloat(q), 30, 110, 240, 360);
+  int elapsed = 0;
+  if(index < lines.length){
+    JSONObject obj = parseJSONObject(lines[index]);
+    if (obj == null){
+     print("bad json... skipping\n");
+     return;
+    }
     
-  }
-  }
-  
-  
-  // Prepare variables needed to draw our heatmap
-  int x = 0;
-  int y = 0;
-  int i = 0;
-  background(0);   // Clear the screen with a black background
-  
-  
-  // each GridEYE pixel will be represented by a 50px square: 
-  // because 50 x 8 = 400, we draw squares until our y location
-  // is 400
-  while(y < 400){
-  
+    int e = obj.getInt("elapsed_ms");
+    if(index == 0){
+      offset = e;
+    }
     
-  // for each increment in the y direction, draw 8 boxes in the 
-  // x direction, creating a 64 pixel matrix
-  while(x < 400){
-  // before drawing each pixel, set our paintcan color to the 
-  // appropriate mapped color value
-  fill(temps[i], 100, 100);
-  rect(x,y,50,50);
-  x = x + 50;
-  i++;
+    elapsed = e - offset;
+    
+    
+    JSONArray pixelz = obj.getJSONArray("pixels");
+    if(pixelz == null){
+      print("bad pixelz\n");
+      return;
+    }
+ 
+   // extract pixels into temps
+    for(int q = 0; q < 64; q++){
+      temps[q] = pixelz.getFloat(q);
+    }
+    
+    draw_heatmap(elapsed, min, max);
+    saveFrame(path + "/" + filename + "/output/frame_######.png");
+    index += 1;
+  } else {
+    
+    print("complete!\n");
+    
+    println(str(index/(elapsed/1000.0)) + " fps\n");
+    while(true){
+    }
   }
-  
-  y = y + 50;
-  x = 0;
-  }
-  
-  // Add a gaussian blur to the canvas in order to create a rough
-  // visual interpolation between pixels.
-  filter(BLUR,10);
-} 
+}
