@@ -1,4 +1,4 @@
-19440616114739763
+19535805206445442
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -62265,6 +62265,13 @@ HVQFN NoLead
 21
 17
 Package_DFN_QFN
+HVQFN-24-1EP_4x4mm_P0.5mm_EP2.1x2.1mm
+HVQFN, 24 Pin (https://www.nxp.com/docs/en/package-information/SOT616-1.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
+HVQFN NoLead
+0
+34
+25
+Package_DFN_QFN
 HVQFN-24-1EP_4x4mm_P0.5mm_EP2.5x2.5mm
 HVQFN, 24 Pin (https://www.nxp.com/docs/en/package-information/SOT616-3.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
 HVQFN NoLead
@@ -84238,6 +84245,13 @@ Semi-shielded Power Inductor
 2
 2
 cm4crypto
+M.2 - M - Amphenol - 10131758-001RLF
+
+
+0
+69
+67
+cm4crypto
 M.2 - M - MDT420M01002
 
 
@@ -84293,6 +84307,13 @@ SDCARD_MOLEX_503398-1892
 0
 14
 11
+cm4crypto
+SFV22R-2STE1HLF
+
+
+0
+24
+24
 cm4crypto
 SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.95x4.9mm_Mask2.71x3.4mm_ThermalVias
 SOIC, 8 Pin (http://www.ti.com/lit/ds/symlink/lm5017.pdf#page=31), generated with kicad-footprint-generator ipc_gullwing_generator.py

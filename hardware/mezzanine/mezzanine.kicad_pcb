@@ -1351,7 +1351,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 47a4c38e-077e-4544-9c7a-ef46323e80c3)
     )
-    (fp_text value "AP22653W6" (at 0 4.5 90) (layer "F.Fab")
+    (fp_text value "AP22652AW6-7" (at 0 4.5 90) (layer "F.Fab")
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 4977a46b-4646-413b-a6c8-be68d2a69c41)
     )
