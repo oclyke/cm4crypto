@@ -7,6 +7,16 @@ adding fast terabyte SSD options within a sleek RPi 4 format makes the cm4crypto
 * acting as a home media server
 * hosting a local database
 
+## status
+
+this project is no longer actively developed.
+the source material will continue to be available for reference.
+
+additional resources:
+
+* [onshape model](https://cad.onshape.com/documents/3095ac02ee5d7dd8a1b9e12a/w/86bdcc88d4120b9515956abd/e/6d8a025f4a8b2a44825a6443?renderMode=0&uiState=6629d60ecf655f459d6d604c)
+* [time lapse of routing the board](https://www.youtube.com............)
+
 ## features
 
 * Adds M.2 M-Key PCIe x1 interface for use with NVMe SSDs or other compatible modules
@@ -23,8 +33,6 @@ property | value | notes
 key | **M** | the M.2 connector on the cm4crypto uses an **M key**
 interface | **PCIe x1** | though the M key standard supports PCIe x4 the cm4 only has x1 PCIe lane available. thanks to PCIe compatibility this should only reduce performance, not prevent functionality
 dimensions | up to **22 x 80** mm | to fit in the case 
-
-
 
 ## RPi 4 compatibility
 
@@ -52,3 +60,17 @@ the cm4rypto inherently gains some compatibility with RPi 4 accessories since it
 ### PoE hats
 * [CMC Tech 3.5A](https://cctvfactory.com/copy-of-cmc-tech-5-2v-3-5a-17-5watt-power-over-ethernet-poe-hat-for-raspberry-pi-4-model-b-and-pi-3-model-b-ieee-802-3af-or-802-3at-poe-network-standard-compliant-made-in-rpc/) (available on Amazon)
 * 
+
+# show and tell
+
+![cm4crypto](./assets/complete-tl.jpeg)
+
+![mezzanine 3d top](./assets/mezzanine-3d-t.png)
+![mezzanine 3d bottom](./assets/mezzanine-3d-b.png)
+![lobby 3d top](./assets/lobby-3d-t.png)
+![lobby 3d bottom](./assets/lobby-3d-b.png)
+![mezzanine combined](./assets/mezzanine-tb.png)
+![mezzanine top](./assets/mezzanine-t.png)
+![mezzanine bottom](./assets/mezzanine-b.png)
+![lobby top](./assets/lobby-t.png)
+![lobby bottom](./assets/lobby-b.png)
