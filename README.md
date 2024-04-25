@@ -15,7 +15,7 @@ the source material will continue to be available for reference.
 additional resources:
 
 * [onshape model](https://cad.onshape.com/documents/3095ac02ee5d7dd8a1b9e12a/w/86bdcc88d4120b9515956abd/e/6d8a025f4a8b2a44825a6443?renderMode=0&uiState=6629d60ecf655f459d6d604c)
-* [time lapse of routing the board](https://www.youtube.com............)
+* [time lapse of routing the board](https://www.youtube.com/watch?v=GDdp88jEIow)
 
 ## features
 
